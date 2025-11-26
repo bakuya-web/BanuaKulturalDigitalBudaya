@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BAKUYA - Banua Kultural Digital Budaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="is-preload">
+    <script>
+      (function () {
+        try {
+          const prefersReduce = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+          ).matches;
+          if (prefersReduce) {
+            document.body.classList.remove("is-preload");
+            document.body.classList.add("is-loaded");
+            return;
+          }
+
+          // Ensure visual change happens after initial paint
+          document.addEventListener("DOMContentLoaded", function () {
+            requestAnimationFrame(function () {
+              document.body.classList.remove("is-preload");
+              document.body.classList.add("is-loaded");
+            });
+          });
+        } catch (e) {
+          // fallback: ensure page is visible
+          document.body.classList.remove("is-preload");
+          document.body.classList.add("is-loaded");
+        }
+      })();
+    </script>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-content">
+        <a href="#" class="logo">BAKUYA</a>
+        <nav class="nav">
+          <a href="#manuskrip">Manuskrip</a>
+          <a href="#kebudayaan">Kebudayaan</a>
+          <a href="#edukasi">Edukasi</a>
+          <a href="#tentang">Tentang</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-content">
+          <h1 class="hero-title">BAKUYA<br />Banua Kultural Digital Budaya</h1>
+          <p class="hero-desc">
+            Pelestarian Manuskrip Kuno, Pengabadian 13 Kabupaten Kota, dan
+            Penerapan Ilmu dasar Manajemen pada Ekonomi Kreatif dan UMKM lokal
+            melalui Digitalisasi
+          </p>
+          <div class="hero-actions">
+            <a href="#manuskrip" class="btn btn-primary">Mulai Jelajah</a>
+            <a href="#kebudayaan" class="btn btn-outline">Kebudayaan Daerah</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Manuskrip Kuno -->
+      <section id="manuskrip" class="section manuskrip">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Pelestarian Manuskrip Kuno</h2>
+            <p class="section-desc">
+              Lima koleksi manuskrip bersejarah yang menceritakan perjalanan
+              Kerajaan Banjar, penyebaran Islam, dan kearifan lokal melalui
+              dokumen diplomatik, naskah keagamaan, peta historis, dan catatan
+              lontara yang tersimpan di berbagai lembaga terpercaya
+            </p>
+          </div>
+
+          <div class="carousel">
+            <div class="carousel-track">
+              <!-- Slide 1 -->
+              <div class="slide active" data-index="0">
+                <div class="slide-image">
+                  <img
+                    src="assets/image/fixmanuskrip/1Naskah%20perjanjian%20antara%20Kerajaan%20Banjar%20dengan%20VOC%20pada%20tahun%201787.jpg"
+                    alt="Naskah Perjanjian Kerajaan Banjar-VOC"
+                  />
+                </div>
+                <div class="slide-content">
+                  <span class="slide-badge">Tahun 1787</span>
+                  <h3 class="slide-title">
+                    Naskah Perjanjian Kerajaan Banjar-VOC
+                  </h3>
+                  <p class="slide-desc">
+                    Dokumen perjanjian resmi antara Kerajaan Banjar dengan VOC
+                    pada tahun 1787 yang ditandatangani oleh tiga tokoh penting:
+                    Susuhunan Nata Alam (Panembahan Batuah), Sultan Sulaiman
+                    Saidullah, dan Sultan Adam Al Wasikh Billah. Merupakan bukti
+                    relasi diplomatik antara kerajaan lokal dan kekuatan
+                    kolonial.
+                  </p>
+                  <ul class="slide-meta">
+                    <li><strong>Sumber:</strong> Museum Lambung Mangkurat</li>
+                    <li>Perjanjian resmi 1787</li>
+                    <li>Tiga penandatangan penting</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="slide" data-index="1">
+                <div class="slide-image">
+                  <img
+                    src="assets/image/fixmanuskrip/2MushapTulis%20Tangan.jpg"
+                    alt="Mushap Al-Qur'an Tulis Tangan"
+                  />
+                </div>
+                <div class="slide-content">
+                  <span class="slide-badge">Karya Istimewa</span>
+                  <h3 class="slide-title">Mushap Al-Qur'an Tulis Tangan</h3>
+                  <p class="slide-desc">
+                    Karya spektakuler Syekh Muhammad Arsyad Al Banjari—ulama
+                    besar terkenal pada zamannya dan tetap dihormati hingga saat
+                    ini. Dilengkapi catatan tepi berisi penjelasan khusus.
+                    Terdiri dari 3 jilid, masing-masing 10 juz. Jilid I di
+                    museum, jilid II dan III di Yayasan Dalam Pagar Martapura.
+                  </p>
+                  <ul class="slide-meta">
+                    <li><strong>Sumber:</strong> Museum Lambung Mangkurat</li>
+                    <li>3 jilid, masing-masing 10 juz</li>
+                    <li>Catatan tepi dengan penjelasan</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="slide" data-index="2">
+                <div class="slide-image">
+                  <img
+                    src="assets/image/fixmanuskrip/3Peta%20manuskrip%20wilayah%20Banjarmasin,%20Kalimantan%20Selatan,%20Kalimantan,%20melukiskan%20medan%20dan%20tindakan%20yang%20menentukan%20saat%20Perang%20Banjar%20(1859-63).jpg"
+                    alt="Peta Manuskrip Perang Banjar"
+                  />
+                </div>
+                <div class="slide-content">
+                  <span class="slide-badge">Circa 1862</span>
+                  <h3 class="slide-title">Peta Manuskrip Perang Banjar</h3>
+                  <p class="slide-desc">
+                    Peta manuskrip wilayah Banjarmasin yang melukiskan medan dan
+                    tindakan pada saat Perang Banjar (1859-1863). Banjarmasin
+                    terbagi menjadi beberapa wilayah administratif kekuasaan
+                    Belanda. Kesultanan secara resmi dicaplok dan dibubarkan
+                    oleh Belanda pada 1860.
+                  </p>
+                  <ul class="slide-meta">
+                    <li>
+                      <strong>Sumber:</strong> Wikipedia & National Library of
+                      Australia
+                    </li>
+                    <li>Tinggi 43,1 cm; Lebar 56,3 cm</li>
+                    <li>Bahan: Kertas</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="slide" data-index="3">
+                <div class="slide-image">
+                  <img
+                    src="assets/image/fixmanuskrip/4Lontara%20Pagatan.jpg"
+                    alt="Lontara Pagatan"
+                  />
+                </div>
+                <div class="slide-content">
+                  <span class="slide-badge">Aksara Lontara</span>
+                  <h3 class="slide-title">Lontara Pagatan</h3>
+                  <p class="slide-desc">
+                    Naskah tulisan tangan dalam aksara Lontara (aksara
+                    Bugis-Makassar) berupa buku harian Kerajaan Pagatan oleh
+                    Kapitan La Mattone, Mantri Kerajaan Pagatan dan Kusan pada
+                    1858-1911. Menggambarkan kebudayaan, sejarah, dan cara hidup
+                    masyarakat di wilayah Pagatan pada masa lalu. Merupakan aset
+                    khazanah pengetahuan yang sangat berharga.
+                  </p>
+                  <ul class="slide-meta">
+                    <li>
+                      <strong>Sumber:</strong> Jejakrekam.com & Penelitian ULM
+                      Banjarmasin
+                    </li>
+                    <li>Buku harian 1858-1911</li>
+                    <li>Aksara Bugis-Makassar</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Slide 5 -->
+              <div class="slide" data-index="4">
+                <div class="slide-image">
+                  <img
+                    src="assets/image/fixmanuskrip/5Naskah%20Kuno%20Hikayat%20Banjar.jpg"
+                    alt="Naskah Kuno Hikayat Banjar"
+                  />
+                </div>
+                <div class="slide-content">
+                  <span class="slide-badge">Aksara Arab-Melayu</span>
+                  <h3 class="slide-title">Naskah Kuno Hikayat Banjar</h3>
+                  <p class="slide-desc">
+                    Kumpulan naskah tambo/babad sejarah Kerajaan Banjar dan
+                    Kotawaringin yang mencakup kisah asal-usul kerajaan,
+                    pemerintahan raja-raja, dan peristiwa-peristiwa penting
+                    seperti masuknya Islam. Dianggap sebagai salah satu bukti
+                    penyebaran Islam di Nusantara.
+                  </p>
+                  <ul class="slide-meta">
+                    <li>
+                      <strong>Sumber:</strong> Dinas Perpustakaan Provinsi
+                      Kalsel
+                    </li>
+                    <li>Dua resensi utama (I dan II)</li>
+                    <li>Koleksi Indonesia dan Eropa</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-nav">
+              <button class="carousel-btn prev" aria-label="Sebelumnya">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <div class="carousel-dots"></div>
+              <button class="carousel-btn next" aria-label="Selanjutnya">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kebudayaan -->
+      <section id="kebudayaan" class="section kebudayaan">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Kebudayaan Kabupaten & Kota</h2>
+            <p class="section-desc">
+              Pengabadian Kebudayaan 13 Kabupaten Kota Provinsi Kalimantan
+              Selatan
+            </p>
+          </div>
+
+          <div class="culture-grid">
+            <article class="culture-card" data-culture="banjarmasin">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Banjarmasin.jpg"
+                  alt="Kota Banjarmasin"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Kota Banjarmasin</h4>
+                <p>
+                  Ibu kota provinsi yang dikenal sebagai Kota Seribu Sungai
+                  dengan pasar terapung yang ikonik.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="kabupaten-banjar">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Banjar.jpg"
+                  alt="Kabupaten Banjar"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Kabupaten Banjar</h4>
+                <p>
+                  Pusat kebudayaan Banjar dengan tradisi kerajinan anyaman purun
+                  dan sasirangan.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="barito-kuala">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Barito Kuala.jpg"
+                  alt="Kabupaten Barito Kuala"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Kabupaten Barito Kuala</h4>
+                <p>
+                  Wilayah agraris dengan tradisi bakumpai dan kesenian hadrah
+                  yang lestari.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="hulu-sungai-utara">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Hulu Sungai Utara (HSU — Amuntai).jpg"
+                  alt="Kabupaten Hulu Sungai Utara"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Hulu Sungai Utara</h4>
+                <p>
+                  Kawasan dengan kearifan ekologi masyarakat Dayak dalam menjaga
+                  alam.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="tabalong">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Tabalong.jpg"
+                  alt="Kabupaten Tabalong"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Kabupaten Tabalong</h4>
+                <p>
+                  Daerah perbukitan dengan tradisi berladang dan kesenian kuda
+                  kepang.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="balangan">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Balangan.jpg"
+                  alt="Kabupaten Balangan"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Kabupaten Balangan</h4>
+                <p>
+                  Wilayah dengan perpaduan budaya Banjar-Dayak yang harmonis.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="banjarbaru">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Banjarbaru.jpg"
+                  alt="Kota Banjarbaru"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Kota Banjarbaru</h4>
+                <p>
+                  Kota pendidikan dengan perpaduan modernitas dan pelestarian
+                  tradisi.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="kotabaru">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Kotabaru.jpg"
+                  alt="Kabupaten Kotabaru"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Kabupaten Kotabaru</h4>
+                <p>
+                  Destinasi wisata bahari dengan tradisi nelayan dan kuliner
+                  seafood.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="tapin">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Tapin.jpg"
+                  alt="Kabupaten Tapin"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Kabupaten Tapin</h4>
+                <p>
+                  Kawasan pegunungan dengan panorama indah dan tradisi agraris.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="hulu-sungai-selatan">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Hulu Sungai Selatan (HSS).jpg"
+                  alt="Kabupaten Hulu Sungai Selatan"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Hulu Sungai Selatan</h4>
+                <p>
+                  Pusat perdagangan tradisional dengan pasar ramai dan kerajinan
+                  khas.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="hulu-sungai-tengah">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Hulu Sungai Tengah (HST — Barabai).jpg"
+                  alt="Kabupaten Hulu Sungai Tengah"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Hulu Sungai Tengah</h4>
+                <p>
+                  Daerah dengan tradisi bercocok tanam padi dan festival panen.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="tanah-laut">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Tanah Laut.jpg"
+                  alt="Kabupaten Tanah Laut"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Kabupaten Tanah Laut</h4>
+                <p>
+                  Wilayah pesisir dengan budaya maritim dan tradisi menangkap
+                  ikan.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+            <article class="culture-card" data-culture="tanah-bumbu">
+              <div class="culture-img">
+                <img
+                  src="assets/image/fixkebudayaan/Kabupaten Tanah Bumbu.jpg"
+                  alt="Kabupaten Tanah Bumbu"
+                />
+              </div>
+              <div class="culture-body">
+                <h4>Kabupaten Tanah Bumbu</h4>
+                <p>
+                  Daerah pesisir dengan budaya bahari, tradisi masyarakat
+                  pesisir, dan keragaman etnis.
+                </p>
+                <button class="culture-btn">Pelajari Lebih Lanjut</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Edukasi UMKM -->
+      <section id="edukasi" class="section edukasi">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Edukasi UMKM</h2>
+            <p class="section-desc">
+              Materi pembelajaran untuk mengembangkan usaha mikro, kecil, dan
+              menengah di era digital
+            </p>
+          </div>
+
+          <div class="edu-grid">
+            <article class="edu-card" data-key="manajemen-perencanaan">
+              <img
+                src="assets/image/edukasiumkm/1.jpg"
+                alt="Manajemen Perencanaan"
+                loading="lazy"
+              />
+              <div class="edu-card-content">
+                <div class="edu-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M3 7h18M5 7v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7" />
+                  </svg>
+                </div>
+                <h4>Manajemen Perencanaan</h4>
+                <button class="edu-btn">Pelajari</button>
+              </div>
+            </article>
+
+            <article class="edu-card" data-key="manajemen-pengorganisasian">
+              <img
+                src="assets/image/edukasiumkm/2.jpg"
+                alt="Manajemen Pengorganisasian"
+                loading="lazy"
+              />
+              <div class="edu-card-content">
+                <div class="edu-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <circle cx="12" cy="8" r="3" />
+                    <path d="M12 14c-4 0-7 2-7 5v2h14v-2c0-3-3-5-7-5z" />
+                  </svg>
+                </div>
+                <h4>Manajemen Pengorganisasian</h4>
+                <button class="edu-btn">Pelajari</button>
+              </div>
+            </article>
+
+            <article class="edu-card" data-key="manajemen-pengarahan">
+              <img
+                src="assets/image/edukasiumkm/3.jpg"
+                alt="Manajemen Pengarahan"
+                loading="lazy"
+              />
+              <div class="edu-card-content">
+                <div class="edu-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>
+                </div>
+                <h4>Manajemen Pengarahan</h4>
+                <button class="edu-btn">Pelajari</button>
+              </div>
+            </article>
+
+            <article class="edu-card" data-key="manajemen-pengendalian">
+              <img
+                src="assets/image/edukasiumkm/4.jpg"
+                alt="Manajemen Pengendalian"
+                loading="lazy"
+              />
+              <div class="edu-card-content">
+                <div class="edu-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M9 11l3 3L22 4" />
+                    <path
+                      d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"
+                    />
+                  </svg>
+                </div>
+                <h4>Manajemen Pengendalian</h4>
+                <button class="edu-btn">Pelajari</button>
+              </div>
+            </article>
+
+            <article class="edu-card" data-key="manajemen-pemasaran-modern">
+              <img
+                src="assets/image/edukasiumkm/5.jpg"
+                alt="Manajemen Pemasaran Modern"
+                loading="lazy"
+              />
+              <div class="edu-card-content">
+                <div class="edu-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path
+                      d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"
+                    />
+                  </svg>
+                </div>
+                <h4>Manajemen Pemasaran Modern</h4>
+                <button class="edu-btn">Pelajari</button>
+              </div>
+            </article>
+
+            <article class="edu-card" data-key="manajemen-operasional">
+              <img
+                src="assets/image/edukasiumkm/6.jpg"
+                alt="Manajemen Operasional"
+                loading="lazy"
+              />
+              <div class="edu-card-content">
+                <div class="edu-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <rect x="3" y="7" width="18" height="13" rx="2" ry="2" />
+                    <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" />
+                  </svg>
+                </div>
+                <h4>Manajemen Operasional</h4>
+                <button class="edu-btn">Pelajari</button>
+              </div>
+            </article>
+
+            <article class="edu-card" data-key="manajemen-keuangan">
+              <img
+                src="assets/image/edukasiumkm/7.jpg"
+                alt="Manajemen Keuangan"
+                loading="lazy"
+              />
+              <div class="edu-card-content">
+                <div class="edu-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                    <polyline points="17 6 23 6 23 12" />
+                  </svg>
+                </div>
+                <h4>Manajemen Keuangan</h4>
+                <button class="edu-btn">Pelajari</button>
+              </div>
+            </article>
+
+            <article class="edu-card" data-key="manajemen-inovasi">
+              <img
+                src="assets/image/edukasiumkm/8.jpg"
+                alt="Manajemen Inovasi"
+                loading="lazy"
+              />
+              <div class="edu-card-content">
+                <div class="edu-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                  </svg>
+                </div>
+                <h4>Manajemen Inovasi</h4>
+                <button class="edu-btn">Pelajari</button>
+              </div>
+            </article>
+
+            <article class="edu-card" data-key="manajemen-risiko">
+              <img
+                src="assets/image/edukasiumkm/9.jpg"
+                alt="Manajemen Risiko"
+                loading="lazy"
+              />
+              <div class="edu-card-content">
+                <div class="edu-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  >
+                    <path d="M12 2l3 7h7l-5 4 2 8-7-5-7 5 2-8-5-4h7z" />
+                  </svg>
+                </div>
+                <h4>Manajemen Risiko</h4>
+                <button class="edu-btn">Pelajari</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Overlay untuk Edukasi UMKM -->
+      <div id="eduModal" class="modal-overlay">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Tutup modal">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+
+          <div class="modal-header">
+            <div class="modal-icon" id="modalIcon"></div>
+            <h2 id="modalTitle" class="modal-title">Judul Materi</h2>
+            <span id="modalBadge" class="modal-badge">Edukasi</span>
+          </div>
+
+          <div class="modal-body" id="modalBody">
+            <div id="modalDesc"></div>
+          </div>
+
+          <div class="modal-footer">
+            <button class="modal-btn modal-btn-secondary" id="modalBtnBack">
+              Tutup
+            </button>
+            <button class="modal-btn modal-btn-primary" id="modalBtnNext">
+              Lanjut Belajar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tentang -->
+      <section id="tentang" class="section tentang">
+        <div class="container">
+          <div class="about-wrapper">
+            <div class="about-left">
+              <div class="about-photo">
+                <img src="assets/image/rafiqi.jpg" alt="Muhammad Rafiqi" />
+              </div>
+              <div class="social-connect">
+                <p class="social-label">Terhubung dengan Saya</p>
+                <div class="social-buttons">
+                  <a
+                    href="https://www.instagram.com/mhmmdrafiqial/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-btn instagram"
+                    aria-label="Instagram"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="5"
+                        ry="5"
+                      ></rect>
+                      <path
+                        d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                      ></path>
+                      <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                    </svg>
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-btn linkedin"
+                    aria-label="LinkedIn"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                      ></path>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                  <!-- <a
+                    href="https://www.threads.net/@mhmmdrafiqial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-btn threads"
+                    aria-label="Threads"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12.186 3.5c-2.77 0-4.96.89-6.46 2.46-1.12 1.18-1.8 2.74-2.03 4.58h2.58c.2-1.32.67-2.37 1.42-3.14.98-1.01 2.42-1.52 4.29-1.52 1.74 0 3.11.43 4.06 1.27.88.78 1.33 1.85 1.33 3.17 0 .73-.17 1.38-.51 1.93-.27.44-.68.84-1.21 1.18-.29.19-.63.38-1.02.57-1.5.73-2.25 1.09-2.63 1.35-.77.52-1.36 1.14-1.76 1.86-.4.72-.6 1.54-.6 2.46v.5h2.5v-.5c0-.58.13-1.08.38-1.5.25-.42.64-.78 1.17-1.08.32-.18.93-.48 1.83-.89 1.14-.52 1.98-1.04 2.52-1.56.83-.8 1.25-1.88 1.25-3.22 0-1.93-.65-3.45-1.95-4.54-1.3-1.09-3.11-1.64-5.4-1.64zm-.19 13c-.55 0-1.02.2-1.41.59-.39.39-.59.86-.59 1.41s.2 1.02.59 1.41c.39.39.86.59 1.41.59s1.02-.2 1.41-.59c.39-.39.59-.86.59-1.41s-.2-1.02-.59-1.41c-.39-.39-.86-.59-1.41-.59z"
+                      />
+                    </svg>
+                    <span>Threads</span>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div class="about-content">
+              <h2 class="section-title">Tentang Saya</h2>
+              <p class="about-role">
+                Wakil III Nanang Banjar Kota Banjarmasin 2025
+              </p>
+              <p class="about-text">
+                Saya berkomitmen menjadi suara pemuda yang aktif dalam
+                pelestarian budaya Banjar sekaligus mendorong inovasi berbasis
+                komunitas untuk kemajuan daerah.
+              </p>
+              <p class="about-text">
+                Perjalanan saya dimulai dari kecintaan mendalam terhadap tradisi
+                lokal dan pengalaman di berbagai kegiatan sosial.
+              </p>
+
+              <div class="values">
+                <h4>Nilai-Nilai yang Dipegang</h4>
+                <div class="values-grid">
+                  <div class="value-item">
+                    <strong>Budaya</strong> — Melestarikan warisan leluhur
+                  </div>
+                  <div class="value-item">
+                    <strong>Edukasi</strong> — Memberdayakan masyarakat
+                  </div>
+                  <div class="value-item">
+                    <strong>Kepemimpinan</strong> — Memimpin dengan teladan
+                  </div>
+                  <div class="value-item">
+                    <strong>Kolaborasi</strong> — Menjembatani aspirasi
+                  </div>
+                </div>
+              </div>
+
+              <blockquote class="vision">
+                "Memperkuat identitas budaya Banjar dan memperluas peran pemuda
+                dalam memajukan Kalimantan Selatan melalui inovasi dan
+                pelestarian nilai-nilai luhur."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">BAKUYA</div>
+            <p>
+              Portal edukasi kebudayaan dan pemberdayaan UMKM Kalimantan
+              Selatan.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Tautan</h4>
+            <a href="#manuskrip">Manuskrip Kuno</a>
+            <a href="#kebudayaan">Kebudayaan Daerah</a>
+            <a href="#edukasi">Edukasi UMKM</a>
+          </div>
+          <div class="footer-contact">
+            <h4>Kontak</h4>
+            <p>info@warisankalsel.id</p>
+            <p>(0511) 123-4567</p>
+            <p>Banjarmasin, Kalimantan Selatan</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="year"></span> BAKUYA - Banua Kultural Digital
+            Budaya
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile nav toggle
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".nav");
+      toggle?.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        toggle.classList.toggle("active");
+      });
+
+      // Carousel
+      (function () {
+        const slides = document.querySelectorAll(".slide");
+        const dotsContainer = document.querySelector(".carousel-dots");
+        const prevBtn = document.querySelector(".carousel-btn.prev");
+        const nextBtn = document.querySelector(".carousel-btn.next");
+        let current = 0;
+        const total = slides.length;
+
+        // Create dots
+        slides.forEach((_, i) => {
+          const dot = document.createElement("button");
+          dot.className = "dot" + (i === 0 ? " active" : "");
+          dot.setAttribute("aria-label", `Slide ${i + 1}`);
+          dot.addEventListener("click", () => goTo(i));
+          dotsContainer.appendChild(dot);
+        });
+
+        const dots = dotsContainer.querySelectorAll(".dot");
+
+        function goTo(index) {
+          slides[current].classList.remove("active");
+          dots[current].classList.remove("active");
+          current = (index + total) % total;
+          slides[current].classList.add("active");
+          dots[current].classList.add("active");
+        }
+
+        prevBtn?.addEventListener("click", () => goTo(current - 1));
+        nextBtn?.addEventListener("click", () => goTo(current + 1));
+
+        // Auto advance
+        setInterval(() => goTo(current + 1), 6000);
+      })();
+      // Modal Education Data & Controller
+      const eduModal = {
+        data: {
+          "manajemen-perencanaan": {
+            title: "Manajemen Perencanaan",
+            badge: "Planning",
+            icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M5 7v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7"/></svg>',
+            description: `
+        <img src="assets/image/edukasiumkm/1.jpg" alt="Manajemen Perencanaan" loading="lazy">
+        <h3>Pengertian</h3>
+        <p>Perencanaan membantu UMKM menyiapkan sumber daya, jadwal produksi, dan strategi pemasaran yang terukur agar mampu memenuhi permintaan pasar dan mengurangi risiko operasional.</p>
+        
+        <h3>Contoh Penerapan di Kalimantan Selatan</h3>
+        <ul class="modal-list">
+          <li><strong>Kain Sasirangan Modern</strong> — Pengrajin sasirangan di Banjarmasin melakukan analisis SWOT untuk menilai kekuatan budaya, kelemahan modal, peluang pasar fashion urban, dan ancaman produk tiruan. Hasilnya digunakan untuk membuat Business Model Canvas berbasis segmentasi anak muda, serta kalender produksi musiman (Eid Collection, Festival Budaya) dan rencana konten TikTok bulanan.</li>
+          <li><strong>UMKM Kuliner Soto Banjar</strong> — Pemilik merencanakan kebutuhan bahan baku harian dan memperkirakan permintaan akhir pekan atau saat event pariwisata di Siring untuk mengurangi risiko kelebihan atau kekurangan stok.</li>
+        </ul>
+      `,
+          },
+          "manajemen-pengorganisasian": {
+            title: "Manajemen Pengorganisasian",
+            badge: "Organizing",
+            icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3"/><path d="M12 14c-4 0-7 2-7 5v2h14v-2c0-3-3-5-7-5z"/></svg>',
+            description: `
+        <img src="assets/image/edukasiumkm/2.jpg" alt="Manajemen Pengorganisasian" loading="lazy">
+        <h3>Pengertian</h3>
+        <p>Mengatur struktur organisasi dan proses kerja agar sumber daya manusia dan material dapat bekerja efisien dan konsisten memenuhi standar produk.</p>
+        
+        <h3>Contoh Penerapan di Kalimantan Selatan</h3>
+        <ul class="modal-list">
+          <li><strong>UMKM Kopi Lokal</strong> — Struktur sederhana: roasting & produksi (1 orang), desain & konten (1), admin marketplace (1), distribusi (kurir/ojol). Mereka membuat SOP roasting, packaging, dan pengiriman untuk menjaga kualitas.</li>
+          <li><strong>Brand Clothing Lokal</strong> — Tim dibagi menjadi desainer grafis, fotografer konten, admin, dan quality control sehingga alur kerja lebih efisien dibanding dikerjakan satu orang.</li>
+        </ul>
+      `,
+          },
+          "manajemen-pengarahan": {
+            title: "Manajemen Pengarahan",
+            badge: "Leading",
+            icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+            description: `
+        <img src="assets/image/edukasiumkm/3.jpg" alt="Manajemen Pengarahan" loading="lazy">
+        <h3>Pengertian</h3>
+        <p>Pemberian arahan, motivasi, dan gaya kepemimpinan yang tepat kepada tim untuk mencapai tujuan bersama dan meningkatkan kreativitas tim.</p>
+        
+        <h3>Contoh Penerapan di Kalimantan Selatan</h3>
+        <ul class="modal-list">
+          <li><strong>UMKM Sasirangan Premium</strong> — Pemilik memakai gaya kepemimpinan situasional: delegatif untuk penjahit senior dan instruktif untuk pegawai baru. Rutin mengadakan sesi brainstorming motif baru berbasis budaya Banjar.</li>
+          <li><strong>Bisnis Kreatif Event Organizer</strong> — Pemimpin EO mendorong ide dekorasi bertema Banjar modern dan memberi bonus saat event sukses sebagai motivasi.</li>
+        </ul>
+      `,
+          },
+          "manajemen-pengendalian": {
+            title: "Manajemen Pengendalian",
+            badge: "Controlling",
+            icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>',
+            description: `
+        <img src="assets/image/edukasiumkm/4.jpg" alt="Manajemen Pengendalian" loading="lazy">
+        <h3>Pengertian</h3>
+        <p>Monitoring dan evaluasi kinerja bisnis untuk memastikan operasional berjalan sesuai rencana, serta melakukan perbaikan jika terjadi penyimpangan.</p>
+        
+        <h3>Contoh Penerapan di Kalimantan Selatan</h3>
+        <ul class="modal-list">
+          <li><strong>UMKM Snack Tradisional</strong> — Menggunakan dashboard sederhana untuk memantau penjualan harian, stok bahan baku, dan keluhan pelanggan. Setiap minggu mengevaluasi performa dan melakukan koreksi jika target tidak tercapai.</li>
+          <li><strong>Brand Fashion Lokal</strong> — Memantau KPI seperti engagement rate Instagram, conversion rate marketplace, dan customer satisfaction score untuk mengukur efektivitas strategi pemasaran.</li>
+        </ul>
+      `,
+          },
+          "manajemen-pemasaran-modern": {
+            title: "Manajemen Pemasaran Modern",
+            badge: "Marketing",
+            icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10"/></svg>',
+            description: `
+        <img src="assets/image/edukasiumkm/5.jpg" alt="Manajemen Pemasaran Modern" loading="lazy">
+        <h3>Pengertian</h3>
+        <p>Strategi pemasaran digital dan konvensional yang terintegrasi untuk meningkatkan brand awareness, engagement, dan penjualan di era digital.</p>
+        
+        <h3>Contoh Penerapan di Kalimantan Selatan</h3>
+        <ul class="modal-list">
+          <li><strong>UMKM Kue Khas Banjar</strong> — Menerapkan strategi omnichannel: penjualan offline di toko fisik + online di marketplace (Tokopedia, Shopee) + Instagram Shop + WhatsApp Business. Rutin membuat konten TikTok proses pembuatan kue untuk meningkatkan awareness.</li>
+          <li><strong>Sasirangan Brand</strong> — Menggunakan influencer lokal Banjarmasin untuk campaign launching produk baru, memanfaatkan SEO untuk artikel blog tentang sasirangan, dan menjalankan iklan Facebook Ads untuk targeting segmen usia 20-35 tahun.</li>
+        </ul>
+      `,
+          },
+          "manajemen-operasional": {
+            title: "Manajemen Operasional",
+            badge: "Operations",
+            icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="13" rx="2" ry="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>',
+            description: `
+        <img src="assets/image/edukasiumkm/6.jpg" alt="Manajemen Operasional" loading="lazy">
+        <h3>Pengertian</h3>
+        <p>Pengelolaan proses produksi, supply chain, dan quality control untuk memastikan efisiensi operasional dan kualitas produk yang konsisten.</p>
+        
+        <h3>Contoh Penerapan di Kalimantan Selatan</h3>
+        <ul class="modal-list">
+          <li><strong>UMKM Produksi Sasirangan</strong> — Menerapkan sistem Just-in-Time untuk pemesanan kain bahan baku agar tidak menumpuk stok. Memiliki checklist quality control untuk setiap tahap produksi (pewarnaan, jahitan, finishing).</li>
+          <li><strong>Katering Masakan Banjar</strong> — Mengoptimalkan layout dapur untuk mempercepat workflow, membuat SOP food safety, dan mengelola supplier bahan baku lokal dengan sistem kontrak bulanan untuk stabilitas harga.</li>
+        </ul>
+      `,
+          },
+          "manajemen-keuangan": {
+            title: "Manajemen Keuangan",
+            badge: "Finance",
+            icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>',
+            description: `
+        <img src="assets/image/edukasiumkm/7.jpg" alt="Manajemen Keuangan" loading="lazy">
+        <h3>Pengertian</h3>
+        <p>Pengelolaan arus kas, pembukuan, analisis profitabilitas, dan perencanaan investasi untuk menjaga kesehatan finansial bisnis.</p>
+        
+        <h3>Contoh Penerapan di Kalimantan Selatan</h3>
+        <ul class="modal-list">
+          <li><strong>UMKM Fashion Lokal</strong> — Menggunakan aplikasi BukuKas untuk mencatat semua transaksi harian. Memisahkan rekening pribadi dan bisnis. Menghitung Gross Profit Margin setiap bulan dan melakukan analisis BEP (Break Even Point) untuk produk baru.</li>
+          <li><strong>Kedai Kopi Banjarmasin</strong> — Membuat proyeksi cash flow 3 bulan ke depan untuk antisipasi modal kerja. Mengalokasikan 10% profit untuk dana darurat dan 15% untuk reinvestasi equipment.</li>
+        </ul>
+      `,
+          },
+          "manajemen-inovasi": {
+            title: "Manajemen Inovasi",
+            badge: "Innovation",
+            icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg>',
+            description: `
+        <img src="assets/image/edukasiumkm/8.jpg" alt="Manajemen Inovasi" loading="lazy">
+        <h3>Pengertian</h3>
+        <p>Pengembangan produk, layanan, atau proses bisnis baru untuk menciptakan value proposition yang lebih baik dan memenangkan kompetisi pasar.</p>
+        
+        <h3>Contoh Penerapan di Kalimantan Selatan</h3>
+        <ul class="modal-list">
+          <li><strong>Sasirangan Kontemporer</strong> — Berinovasi dengan menggabungkan motif tradisional sasirangan ke produk modern seperti sneakers, tas laptop, dan phone case. Melakukan riset pasar untuk mengetahui preferensi desain anak muda.</li>
+          <li><strong>UMKM Kuliner</strong> — Mengembangkan varian rasa soto banjar fusion (soto banjar ramen, soto banjar cheese) untuk menarik segmen milenial. Menerapkan sistem pre-order online untuk mengurangi food waste.</li>
+        </ul>
+      `,
+          },
+          "manajemen-risiko": {
+            title: "Manajemen Risiko",
+            badge: "Risk Management",
+            icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3 7h7l-5 4 2 8-7-5-7 5 2-8-5-4h7z"/></svg>',
+            description: `
+        <img src="assets/image/edukasiumkm/9.jpg" alt="Manajemen Risiko" loading="lazy">
+        <h3>Pengertian</h3>
+        <p>Identifikasi, analisis, dan mitigasi risiko bisnis (operasional, finansial, reputasi) untuk melindungi kelangsungan usaha dari ancaman yang tidak terduga.</p>
+        
+        <h3>Contoh Penerapan di Kalimantan Selatan</h3>
+        <ul class="modal-list">
+          <li><strong>UMKM Ekspor Kerajinan</strong> — Melakukan hedging untuk risiko fluktuasi kurs mata uang. Memiliki backup supplier untuk mengurangi risiko supply chain disruption. Mengasuransikan barang kiriman untuk risiko kerusakan dalam pengiriman.</li>
+          <li><strong>Restoran Lokal</strong> — Membuat business continuity plan untuk menghadapi kondisi darurat seperti banjir (yang sering terjadi di Kalsel). Diversifikasi menu dan supplier untuk mengurangi ketergantungan pada satu bahan baku.</li>
+        </ul>
+      `,
+          },
+        },
+
+        // Elements
+        modal: null,
+        modalTitle: null,
+        modalBadge: null,
+        modalIcon: null,
+        modalBody: null,
+        modalDesc: null,
+        modalBtnBack: null,
+        modalBtnNext: null,
+        modalClose: null,
+        currentKey: null,
+
+        // Order of modules
+        moduleOrder: [
+          "manajemen-perencanaan",
+          "manajemen-pengorganisasian",
+          "manajemen-pengarahan",
+          "manajemen-pengendalian",
+          "manajemen-pemasaran-modern",
+          "manajemen-operasional",
+          "manajemen-keuangan",
+          "manajemen-inovasi",
+          "manajemen-risiko",
+        ],
+
+        // Init
+        init() {
+          this.cacheElements();
+          this.bindEvents();
+        },
+
+        cacheElements() {
+          this.modal = document.getElementById("eduModal");
+          this.modalTitle = document.getElementById("modalTitle");
+          this.modalBadge = document.getElementById("modalBadge");
+          this.modalIcon = document.getElementById("modalIcon");
+          this.modalBody = document.getElementById("modalBody");
+          this.modalDesc = document.getElementById("modalDesc");
+          this.modalBtnBack = document.getElementById("modalBtnBack");
+          this.modalBtnNext = document.getElementById("modalBtnNext");
+          this.modalClose = document.querySelector(".modal-close");
+        },
+
+        bindEvents() {
+          // Open modal when clicking edu cards
+          const eduCards = document.querySelectorAll(".edu-card");
+          eduCards.forEach((card) => {
+            const btn = card.querySelector(".edu-btn");
+            btn.addEventListener("click", (e) => {
+              e.stopPropagation();
+              const key = card.getAttribute("data-key");
+              this.openModal(key);
+            });
+          });
+
+          // Close modal events
+          this.modalClose.addEventListener("click", () => this.closeModal());
+          this.modalBtnBack.addEventListener("click", () => this.closeModal());
+
+          // Close when clicking overlay background
+          this.modal.addEventListener("click", (e) => {
+            if (e.target === this.modal) {
+              this.closeModal();
+            }
+          });
+
+          // Close with Escape key
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && this.modal.classList.contains("active")) {
+              this.closeModal();
+            }
+          });
+
+          // "Lanjut Belajar" button - open next module
+          this.modalBtnNext.addEventListener("click", () => {
+            this.openNextModule();
+          });
+        },
+
+        openModal(key) {
+          const content = this.data[key];
+          if (!content) return;
+
+          // Store current key
+          this.currentKey = key;
+
+          // Populate modal content
+          this.modalTitle.textContent = content.title;
+          this.modalBadge.textContent = content.badge;
+          this.modalIcon.innerHTML = content.icon;
+          this.modalDesc.innerHTML = content.description;
+
+          // Update "Lanjut Belajar" button text
+          this.updateNextButton();
+
+          // Show modal with animation
+          this.modal.classList.add("active");
+          document.body.style.overflow = "hidden"; // Prevent background scrolling
+
+          // Reset scroll position
+          this.modalBody.scrollTop = 0;
+        },
+
+        openNextModule() {
+          const currentIndex = this.moduleOrder.indexOf(this.currentKey);
+
+          // Check if there's a next module
+          if (currentIndex < this.moduleOrder.length - 1) {
+            const nextKey = this.moduleOrder[currentIndex + 1];
+
+            // Smooth transition: fade out, change content, fade in
+            this.modal.classList.remove("active");
+
+            setTimeout(() => {
+              this.openModal(nextKey);
+            }, 300);
+          } else {
+            // If last module, just close modal
+            this.closeModal();
+          }
+        },
+
+        updateNextButton() {
+          const currentIndex = this.moduleOrder.indexOf(this.currentKey);
+
+          if (currentIndex === this.moduleOrder.length - 1) {
+            // Last module
+            this.modalBtnNext.textContent = "Selesai";
+          } else {
+            // Has next module
+            this.modalBtnNext.textContent = "Lanjut Belajar";
+          }
+        },
+
+        closeModal() {
+          this.modal.classList.remove("active");
+          document.body.style.overflow = ""; // Restore scrolling
+        },
+      };
+
+      // Initialize when DOM is ready
+      document.addEventListener("DOMContentLoaded", () => {
+        eduModal.init();
+      });
+      // Modal Kebudayaan Data & Controller
+      const cultureModal = {
+        data: {
+          banjarmasin: {
+            title: "Kota Banjarmasin",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Budaya sungai Banjar (pasar terapung, kehidupan kelotok), kain tradisional sasirangan, musik tradisional (kintung) dan tarian Banjar seperti topeng Banjar.</p>
+              
+              <h3>Detail</h3>
+              <p>Pasar Terapung Muara Kuin / Lok Baintan adalah simbol kuat budaya perdagangan sungai yang diwarisi dari era Kesultanan Banjar; sasirangan adalah kain celupan khas dengan motif tradisional yang dipakai dalam upacara dan busana adat; banyak upacara adat dan pertunjukan topeng/tari masih dipertunjukkan pada hajatan dan festival.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p><strong>Festival Budaya Pasar Terapung</strong> — event kebudayaan/pariwisata yang menonjolkan pawai kelotok, lomba acil pasar terapung, dan panggung seni.</p>
+            `,
+          },
+          banjarbaru: {
+            title: "Kota Banjarbaru",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Ekspresi seni Banjar modern + pelestarian sasirangan dan pawai budaya; muncul komunitas seni kontemporer.</p>
+              
+              <h3>Detail</h3>
+              <p>Banjarbaru aktif menyelenggarakan festival pawai seni & budaya yang melibatkan sanggar lokal, pameran kriya, dan workshop—menjadi ruang promosi budaya bagi generasi muda.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p><strong>Festival Seni & Pawai Budaya Banjarbaru</strong> — pawai, kampoeng budaya, panggung seni.</p>
+              <p><em>Sumber: Disporabudpar Banjarbaru</em></p>
+            `,
+          },
+          "kabupaten-banjar": {
+            title: "Kabupaten Banjar",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Mandulang intan, Pasar terapung Lok Baintan (desa Lok Baintan di Kabupaten Banjar), tradisi pesisir dan pelayaran tradisional, kerajinan sasirangan.</p>
+              
+              <h3>Detail</h3>
+              <p>Di Banjar (Kabupaten) pasar terapung Lok Baintan berbeda suasana dari Muara Kuin—lebih pedesaan dan tradisional; komunitas pesisir memelihara ritual-ritual laut dan kehidupan berbasis sungai.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p>Lok Baintan sebagai destinasi budaya sungai; festival lokal yang mengangkat tradisi sungai.</p>
+            `,
+          },
+          "barito-kuala": {
+            title: "Kabupaten Barito Kuala",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Pulau sewangi (menjadi kebudayaan yang tumbuh di batola dan memiliki sebutan seribu jukung), Warisan suku Banjar & Bakumpai; rumah panggung/Rumah Bulat tradisional di sepanjang sungai; ritual lokal seperti Baarak Naga di beberapa desa.</p>
+              
+              <h3>Detail</h3>
+              <p>Marabahan punya jejak permukiman sungai (rumah panjang) dan tradisi lokal Bakumpai; ada pertunjukan tradisi yang berakar pada budaya sungai dan agraris.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p>Situs-situs cagar budaya, festival lokal yang memamerkan rumah tradisional dan ritual adat.</p>
+            `,
+          },
+          "hulu-sungai-selatan": {
+            title: "Kabupaten Hulu Sungai Selatan",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Kebudayaan Dayak Loksado, pertunjukan wayang orang versi lokal, seni tradisional Banjar yang dipertontonkan pada upacara adat.</p>
+              
+              <h3>Detail</h3>
+              <p>HSS aktif menampilkan tari-tarian klasik Banjar seperti kuda gepang dan wayang orang dalam program pelestarian budaya, khususnya pada event museum dan kegiatan desa.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p>Pentas kesenian lokal dan peragaan tari/wayang di acara kabupaten.</p>
+            `,
+          },
+          "hulu-sungai-tengah": {
+            title: "Kabupaten Hulu Sungai Tengah",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Tarian khas kuda gipang barabai, Tradisi Batumbang Apam, ritual ba-usung (upacara pangantin), berbagai ritual kelokal yang melibatkan komunitas Banjar.</p>
+              
+              <h3>Detail</h3>
+              <p>HST melestarikan tradisi anak-anak dan ritual komunitas (mis. Batumbang Apam) yang sering dihubungkan dengan upacara adat kelahiran/perayaan lokal; adanya program budaya sekolah dan Saka Widya Budaya.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p>Festival-festival budaya desa, upacara adat yang menjadi daya tarik etnografi.</p>
+            `,
+          },
+          "hulu-sungai-utara": {
+            title: "Kabupaten Hulu Sungai Utara",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Tradisi keagamaan yang bercampur dengan budaya lokal (pembacaan syair maulid, tradisi keagamaan Banjar), kerajinan anyaman, pasar pagi/ subuh kerajinan.</p>
+              
+              <h3>Detail</h3>
+              <p>HSU mempertahankan tradisi religi dan kultural Banjar; pusat kerajinan anyaman menjadi ciri khas lokal (pasar subuh kerajinan sebagai warisan budaya material).</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p>Peringatan Maulid dan event kerajinan pasar subuh sebagai atraksi budaya.</p>
+            `,
+          },
+          tapin: {
+            title: "Kabupaten Tapin",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Tarian khas Topeng Carita, Tarian tradisional Banjar (mis. Tari Dindang, Tapung Tawar), permainan rakyat, kearifan lokal agraris.</p>
+              
+              <h3>Detail</h3>
+              <p>Tapin rutin menyelanggarakan Tapin Art Festival yang menonjolkan tari kolosal, seni tradisional, permainan rakyat, dan UMKM budaya—memperlihatkan upaya menghidupkan kembali permainan dan tarian tradisi.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p><strong>Tapin Art Festival</strong> — festival seni tahunan yang menonjolkan budaya lokal dan produk UMKM.</p>
+            `,
+          },
+          tabalong: {
+            title: "Kabupaten Tabalong",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Kekuatan kultur Dayak (Dayak Deah / Meratus), ritual adat seperti Tawas Jaa, permainan tradisi dan pertunjukan tarian Dayak. Makan batalam (suatu budaya makan bersama dalam satu nampan, terdapat nilai sosial di dalamnya kita bisa berinteraksi satu sama lain).</p>
+              
+              <h3>Detail</h3>
+              <p>Tabalong menampilkan budaya Dayak Meratus yang kuat: tarian, ritual adat, dan festival etnik yang merayakan tradisi lokal serta menjaga praktik spiritual/komunal.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p><strong>Festival Budaya Dayak Deah / Tabalong Ethnic Festival</strong> — karnaval etnik, fashion show, tarian, dan ritual adat.</p>
+            `,
+          },
+          "tanah-laut": {
+            title: "Kabupaten Tanah Laut",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Tarian radap rahayu (tari penyambutan untuk acara besar), Musik tradisional kurung-kurung, tarian dan tradisi banjar setempat, kerajinan dan kuliner khas pesisir.</p>
+              
+              <h3>Detail</h3>
+              <p>Tanah Laut melestarikan musik kurung-kurung (musik hentakan tradisional), berbagai tarian daerah, dan ritual komunitas pesisir/agraris.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p>Pertunjukan kolosal tari daerah dan festival budaya kabupaten yang menampilkan seni tari tradisional.</p>
+            `,
+          },
+          "tanah-bumbu": {
+            title: "Kabupaten Tanah Bumbu",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Mapenretasi (suatu ritual untuk melakukan persembahan ke lautan), Ragam pakaian adat dan motif lokal, Pentol ikan khas Pagatan, campuran pengaruh Banjar dan pesisir; upaya pelestarian motif dan kerajinan lokal.</p>
+              
+              <h3>Detail</h3>
+              <p>Tanah Bumbu punya pola busana adat yang khas dan kegiatan budaya yang mempromosikan motif lokal dalam acara pameran & fashion show tradisional.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p>Pameran budaya, fashion show pakaian adat, event karnaval tradisi.</p>
+            `,
+          },
+          balangan: {
+            title: "Kabupaten Balangan",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Aruh adat nimbuk (suatu budaya ritual yang bertujuan untuk membuat rumah bagi orang yang meninggal), Kesenian Dayak (tarian tradisional), permainan lokal seperti Balogo, serta tarian ritual yang berakar pada kepercayaan lokal.</p>
+              
+              <h3>Detail</h3>
+              <p>Balangan aktif mempromosikan tari tradisional dan kompetisi karya tari daerah; festival desa kadang menjadi panggung utama pelestarian seni.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p>Festival kesenian desa, lomba tari daerah (contoh: tari "Surung Lalan" yang memperoleh apresiasi di tingkat provinsi).</p>
+            `,
+          },
+          kotabaru: {
+            title: "Kabupaten Kotabaru",
+            content: `
+              <h3>Kebudayaan Utama</h3>
+              <p>Keberagaman budaya pesisir (Banjar, Dayak Meratus, Bugis, Bajau) — ritual pesisir seperti Selamatan Laut, tarian Dayak Meratus, teater kolosal lokal.</p>
+              
+              <h3>Detail</h3>
+              <p>Kotabaru menonjolkan budaya bahari dan Dayak Meratus; pertunjukan tari-tarian besar (kolosal), tarian naratif seperti Tari Anceak yang berkaitan dengan ritual laut.</p>
+              
+              <h3>Atraksi & Event</h3>
+              <p><strong>Festival Budaya Sa-Ijaan / Festival Kotabaru</strong> — karnaval budaya, pawai, atraksi bahari dan teater kolosal.</p>
+            `,
+          },
+        },
+        init: function () {
+          const modal = document.getElementById("cultureModal");
+          const closeBtn = modal.querySelector(".modal-close");
+          const closeBtnFooter = document.getElementById(
+            "cultureModalBtnClose"
+          );
+
+          closeBtn.addEventListener("click", () => this.close());
+          closeBtnFooter.addEventListener("click", () => this.close());
+
+          modal.addEventListener("click", (e) => {
+            if (e.target === modal) this.close();
+          });
+
+          document.querySelectorAll(".culture-btn").forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+              const card = e.target.closest(".culture-card");
+              const cultureKey = card.getAttribute("data-culture");
+              this.open(cultureKey);
+            });
+          });
+        },
+        open: function (key) {
+          const data = this.data[key];
+          if (!data) return;
+
+          document.getElementById("cultureModalTitle").textContent = data.title;
+          document.getElementById("cultureModalBody").innerHTML = data.content;
+
+          const modal = document.getElementById("cultureModal");
+          modal.classList.add("active");
+          document.body.style.overflow = "hidden";
+        },
+        close: function () {
+          const modal = document.getElementById("cultureModal");
+          modal.classList.remove("active");
+          document.body.style.overflow = "";
+        },
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        cultureModal.init();
+      });
+    </script>
+
+    <!-- Modal Overlay untuk Kebudayaan -->
+    <div id="cultureModal" class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Tutup modal">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <h2 id="cultureModalTitle" class="modal-title">Judul Kebudayaan</h2>
+        </div>
+
+        <div class="modal-body" id="cultureModalBody">
+          <p>Deskripsi kebudayaan akan ditampilkan di sini...</p>
+        </div>
+
+        <div class="modal-footer">
+          <button
+            class="modal-btn modal-btn-secondary"
+            id="cultureModalBtnClose"
+          >
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Overlay untuk Edukasi -->
+    <div id="eduModal" class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Tutup modal">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-icon" id="modalIcon"></div>
+          <h2 id="modalTitle" class="modal-title">Judul Materi</h2>
+          <span id="modalBadge" class="modal-badge">Edukasi</span>
+        </div>
+
+        <div class="modal-body" id="modalBody">
+          <p id="modalDesc">Deskripsi materi akan ditampilkan di sini...</p>
+        </div>
+
+        <div class="modal-footer">
+          <button class="modal-btn modal-btn-secondary" id="modalBtnBack">
+            Kembali
+          </button>
+          <button class="modal-btn modal-btn-primary" id="modalBtnNext">
+            Lanjut Belajar
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
