@@ -11,13 +11,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles.css" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;" />
     <script>
       // Auto-detect if running on GitHub Pages and adjust paths
       (function() {
         const isGitHub = window.location.hostname === 'nanang-rafiqi.github.io';
         if (isGitHub) {
           const basePath = '/BanuaKulturalDigitalBudaya';
-          // Inject CSS with corrected paths
           const style = document.createElement('style');
           style.textContent = `.hero { background: linear-gradient(rgba(250, 247, 242, 0.60), rgba(250, 247, 242, 0.60)), url('${basePath}/assets/image/fixkebudayaan/Banjarmasin.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; }`;
           document.head.appendChild(style);
@@ -26,6 +26,12 @@
     </script>
   </head>
   <body class="is-preload">
+    <!-- Background Music -->
+    <audio id="bgMusic" preload="auto" loop>
+      <source src="assets/musik-banjar.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    
     <script>
       (function () {
         try {
@@ -43,6 +49,34 @@
             requestAnimationFrame(function () {
               document.body.classList.remove("is-preload");
               document.body.classList.add("is-loaded");
+              
+              // Auto-play background music
+              const bgMusic = document.getElementById("bgMusic");
+              if (bgMusic) {
+                bgMusic.volume = 0.3; // Set volume to 30%
+                
+                // Coba play langsung
+                const playPromise = bgMusic.play();
+                if (playPromise !== undefined) {
+                  playPromise
+                    .then(() => {
+                      console.log("Music started playing automatically");
+                    })
+                    .catch(error => {
+                      console.log("Autoplay blocked by browser policy");
+                      // Trigger play on first user interaction (click, touch, keypress)
+                      const playOnInteraction = function() {
+                        bgMusic.play().catch(err => console.log("Still blocked:", err));
+                        document.removeEventListener('click', playOnInteraction);
+                        document.removeEventListener('touchstart', playOnInteraction);
+                        document.removeEventListener('keydown', playOnInteraction);
+                      };
+                      document.addEventListener('click', playOnInteraction);
+                      document.addEventListener('touchstart', playOnInteraction);
+                      document.addEventListener('keydown', playOnInteraction);
+                    });
+                }
+              }
             });
           });
         } catch (e) {
@@ -65,6 +99,12 @@
         <button class="nav-toggle" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
+        <!-- <button id="musicToggle" class="music-toggle" aria-label="Toggle Music" title="Nyalakan Musik">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18v-3H5v3M19 18v-3h-4v3M12 2v14"/>
+            <circle cx="12" cy="18" r="1"/>
+          </svg>
+        </button> -->
       </div>
     </header>
 
@@ -1402,6 +1442,39 @@
       // Initialize when DOM is ready
       document.addEventListener("DOMContentLoaded", () => {
         eduModal.init();
+        
+        // Music Toggle Control
+        const musicToggle = document.getElementById("musicToggle");
+        const bgMusic = document.getElementById("bgMusic");
+        
+        if (musicToggle && bgMusic) {
+          // Set initial state - musik sudah playing
+          musicToggle.classList.add("playing");
+          musicToggle.title = "Matikan Musik";
+          
+          musicToggle.addEventListener("click", () => {
+            if (bgMusic.paused) {
+              bgMusic.play();
+              musicToggle.classList.add("playing");
+              musicToggle.title = "Matikan Musik";
+            } else {
+              bgMusic.pause();
+              musicToggle.classList.remove("playing");
+              musicToggle.title = "Nyalakan Musik";
+            }
+          });
+          
+          // Update button state when music ends/starts
+          bgMusic.addEventListener("play", () => {
+            musicToggle.classList.add("playing");
+            musicToggle.title = "Matikan Musik";
+          });
+          
+          bgMusic.addEventListener("pause", () => {
+            musicToggle.classList.remove("playing");
+            musicToggle.title = "Nyalakan Musik";
+          });
+        }
       });
       // Modal Kebudayaan Data & Controller
       const cultureModal = {
