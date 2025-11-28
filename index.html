@@ -18,8 +18,10 @@
         const isGitHub = window.location.hostname === 'nanang-rafiqi.github.io';
         if (isGitHub) {
           const basePath = '/BanuaKulturalDigitalBudaya';
+          // Use the desired background (encode spaces as %20)
+          const bgFile = 'Kabupaten%20Balangan.jpg';
           const style = document.createElement('style');
-          style.textContent = `.hero { background: linear-gradient(rgba(250, 247, 242, 0.60), rgba(250, 247, 242, 0.60)), url('${basePath}/assets/image/fixkebudayaan/banjarmasinnn.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; }`;
+          style.textContent = `.hero { background: linear-gradient(rgba(250, 247, 242, 0.60), rgba(250, 247, 242, 0.60)), url('${basePath}/assets/image/fixkebudayaan/${bgFile}'); background-size: cover; background-position: center; background-repeat: no-repeat; }`;
           document.head.appendChild(style);
         }
       })();
