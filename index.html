@@ -27,7 +27,7 @@
   </head>
   <body class="is-preload">
     <!-- Background Music -->
-    <audio id="bgMusic" preload="metadata" loop>
+    <audio id="bgMusic" preload="metadata" loop crossorigin="anonymous">
       <source src="assets/musik-banjar.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
@@ -50,27 +50,44 @@
               document.body.classList.remove("is-preload");
               document.body.classList.add("is-loaded");
               
-              // Auto-play background music
+              // Auto-play background music dengan optimasi mobile
               const bgMusic = document.getElementById("bgMusic");
               if (bgMusic) {
                 bgMusic.volume = 0.3; // Set volume to 30%
                 
-                // Strategy: Try autoplay dengan fallback ke user interaction
+                // Strategy: Priority untuk mobile delay reduction
                 const playMusic = () => {
                   bgMusic.play()
                     .then(() => {
                       console.log("✅ Musik playing");
                     })
-                    .catch(() => {
-                      // Jika blocked, tunggu user click
-                      document.body.addEventListener('click', () => {
-                        bgMusic.play();
-                      }, { once: true });
+                    .catch((error) => {
+                      console.log("⏸️ Autoplay blocked - waiting for user interaction");
+                      
+                      // Mobile-optimized: trigger play on FIRST interaction
+                      const playOnce = () => {
+                        bgMusic.play().catch(err => {
+                          console.log("Still blocked:", err);
+                        });
+                        // Clean up listeners to avoid memory leak
+                        document.removeEventListener('click', playOnce);
+                        document.removeEventListener('touchstart', playOnce);
+                      };
+                      
+                      document.addEventListener('click', playOnce, { once: true });
+                      document.addEventListener('touchstart', playOnce, { once: true });
                     });
                 };
                 
                 // Coba play setelah buffer minimal tersedia
                 bgMusic.addEventListener('canplay', playMusic, { once: true });
+                
+                // Fallback: jika canplay tidak trigger dalam 3 detik (slow network)
+                setTimeout(() => {
+                  if (bgMusic.readyState < 2) {
+                    console.log("⚠️ Slow network detected, waiting for user click");
+                  }
+                }, 3000);
               }
             });
           });
