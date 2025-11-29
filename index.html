@@ -235,12 +235,7 @@
         <button class="nav-toggle" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
-        <!-- <button id="musicToggle" class="music-toggle" aria-label="Toggle Music" title="Nyalakan Musik">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M9 18v-3H5v3M19 18v-3h-4v3M12 2v14"/>
-            <circle cx="12" cy="18" r="1"/>
-          </svg>
-        </button> -->
+       
       </div>
     </header>
 
@@ -1105,47 +1100,7 @@
                     </svg>
                     <span>Instagram</span>
                   </a>
-                  <!-- <a
-                    href="https://www.linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-btn linkedin"
-                    aria-label="LinkedIn"
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
-                      ></path>
-                      <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    <span>LinkedIn</span>
-                  </a> -->
-                  <!-- <a
-                    href="https://www.threads.net/@mhmmdrafiqial"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-btn threads"
-                    aria-label="Threads"
-                  >
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                    >
-                      <path
-                        d="M12.186 3.5c-2.77 0-4.96.89-6.46 2.46-1.12 1.18-1.8 2.74-2.03 4.58h2.58c.2-1.32.67-2.37 1.42-3.14.98-1.01 2.42-1.52 4.29-1.52 1.74 0 3.11.43 4.06 1.27.88.78 1.33 1.85 1.33 3.17 0 .73-.17 1.38-.51 1.93-.27.44-.68.84-1.21 1.18-.29.19-.63.38-1.02.57-1.5.73-2.25 1.09-2.63 1.35-.77.52-1.36 1.14-1.76 1.86-.4.72-.6 1.54-.6 2.46v.5h2.5v-.5c0-.58.13-1.08.38-1.5.25-.42.64-.78 1.17-1.08.32-.18.93-.48 1.83-.89 1.14-.52 1.98-1.04 2.52-1.56.83-.8 1.25-1.88 1.25-3.22 0-1.93-.65-3.45-1.95-4.54-1.3-1.09-3.11-1.64-5.4-1.64zm-.19 13c-.55 0-1.02.2-1.41.59-.39.39-.59.86-.59 1.41s.2 1.02.59 1.41c.39.39.86.59 1.41.59s1.02-.2 1.41-.59c.39-.39.59-.86.59-1.41s-.2-1.02-.59-1.41c-.39-.39-.86-.59-1.41-.59z"
-                      />
-                    </svg>
-                    <span>Threads</span>
-                  </a> -->
+                 
                 </div>
               </div>
             </div>
@@ -1176,30 +1131,7 @@
                 meninggalkan akar, dan melangkah maju tanpa kehilangan siapa
                 kita sebenarnya.
               </p>
-              <!-- 
-              <div class="values">
-                <h4>Nilai-Nilai yang Dipegang</h4>
-                <div class="values-grid">
-                  <div class="value-item">
-                    <strong>Budaya</strong> — Melestarikan warisan leluhur
-                  </div>
-                  <div class="value-item">
-                    <strong>Edukasi</strong> — Memberdayakan masyarakat
-                  </div>
-                  <div class="value-item">
-                    <strong>Kepemimpinan</strong> — Memimpin dengan teladan
-                  </div>
-                  <div class="value-item">
-                    <strong>Kolaborasi</strong> — Menjembatani aspirasi
-                  </div>
-                </div>
-              </div>
-
-              <blockquote class="vision">
-                "Memperkuat identitas budaya Banjar dan memperluas peran pemuda
-                dalam memajukan Kalimantan Selatan melalui inovasi dan
-                pelestarian nilai-nilai luhur." -->
-              <!-- </blockquote> -->
+              
             </div>
           </div>
         </div>
@@ -1611,11 +1543,19 @@
           });
         }
       });
-      // Modal Kebudayaan Data & Controller
+      // Modal Kebudayaan Data & Controller dengan Carousel
       const cultureModal = {
         data: {
           banjarmasin: {
             title: "Kota Banjarmasin",
+            images: [
+              "assets/image/fixkebudayaan/banjarmasinnn.jpg"
+            ],
+            imageLabels: [
+              "Pasar Terapung Muara Kuin",
+              "Kain Sasirangan Tradisional",
+              "Tarian Banjar Topeng"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Budaya sungai Banjar (pasar terapung, kehidupan kelotok), kain tradisional sasirangan, musik tradisional (kintung) dan tarian Banjar seperti topeng Banjar.</p>
@@ -1629,6 +1569,14 @@
           },
           banjarbaru: {
             title: "Kota Banjarbaru",
+            images: [
+              "assets/image/fixkebudayaan/Banjarbaru.jpg"
+            ],
+            imageLabels: [
+              "Kota Idaman Banjarbaru",
+              "Festival Seni & Budaya",
+              "Komunitas Seni Kontemporer"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Ekspresi seni Banjar modern + pelestarian sasirangan dan pawai budaya; muncul komunitas seni kontemporer.</p>
@@ -1643,6 +1591,15 @@
           },
           "kabupaten-banjar": {
             title: "Kabupaten Banjar",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Banjar.jpg",
+              "assets/image/fixkebudayaan/banjar-2.jpg"
+            ],
+            imageLabels: [
+              "Mandulang Intan",
+              "Pasar Terapung Lok Baintan",
+              "Kerajinan Sasirangan"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Mandulang intan, Pasar terapung Lok Baintan (desa Lok Baintan di Kabupaten Banjar), tradisi pesisir dan pelayaran tradisional, kerajinan sasirangan.</p>
@@ -1656,6 +1613,15 @@
           },
           "barito-kuala": {
             title: "Kabupaten Barito Kuala",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Barito Kuala.jpg",
+              "assets/image/fixkebudayaan/barito-kuala-2.jpg"
+            ],
+            imageLabels: [
+              "Pulau Sewangi",
+              "Rumah Panggung Tradisional",
+              "Ritual Baarak Naga"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Pulau sewangi (menjadi kebudayaan yang tumbuh di batola dan memiliki sebutan seribu jukung), Warisan suku Banjar & Bakumpai; rumah panggung/Rumah Bulat tradisional di sepanjang sungai; ritual lokal seperti Baarak Naga di beberapa desa.</p>
@@ -1669,6 +1635,15 @@
           },
           "hulu-sungai-selatan": {
             title: "Kabupaten Hulu Sungai Selatan",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Hulu Sungai Selatan (HSS).jpg",
+              "assets/image/fixkebudayaan/hss-2.jpg"
+            ],
+            imageLabels: [
+              "Kebudayaan Dayak Loksado",
+              "Wayang Orang Lokal",
+              "Tari Kuda Gepang"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Kebudayaan Dayak Loksado, pertunjukan wayang orang versi lokal, seni tradisional Banjar yang dipertontonkan pada upacara adat.</p>
@@ -1682,6 +1657,15 @@
           },
           "hulu-sungai-tengah": {
             title: "Kabupaten Hulu Sungai Tengah",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Hulu Sungai Tengah (HST — Barabai).jpg",
+              "assets/image/fixkebudayaan/hst-2.jpg"
+            ],
+            imageLabels: [
+              "Tarian Kuda Gipang Barabai",
+              "Tradisi Batumbang Apam",
+              "Upacara Pangantin"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Tarian khas kuda gipang barabai, Tradisi Batumbang Apam, ritual ba-usung (upacara pangantin), berbagai ritual kelokal yang melibatkan komunitas Banjar.</p>
@@ -1695,6 +1679,15 @@
           },
           "hulu-sungai-utara": {
             title: "Kabupaten Hulu Sungai Utara",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Hulu Sungai Utara (HSU — Amuntai).jpg",
+              "assets/image/fixkebudayaan/hsu-2.jpg"
+            ],
+            imageLabels: [
+              "Amuntai Kota Bertaqwa",
+              "Tradisi Maulid",
+              "Kerajinan Anyaman Pasar Subuh"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Tradisi keagamaan yang bercampur dengan budaya lokal (pembacaan syair maulid, tradisi keagamaan Banjar), kerajinan anyaman, pasar pagi/ subuh kerajinan.</p>
@@ -1708,6 +1701,15 @@
           },
           tapin: {
             title: "Kabupaten Tapin",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Tapin.jpg",
+              "assets/image/fixkebudayaan/tapin-2.jpg"
+            ],
+            imageLabels: [
+              "Topeng Carita Tradisional",
+              "Tapin Art Festival",
+              "Permainan Rakyat Lokal"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Tarian khas Topeng Carita, Tarian tradisional Banjar (mis. Tari Dindang, Tapung Tawar), permainan rakyat, kearifan lokal agraris.</p>
@@ -1721,6 +1723,15 @@
           },
           tabalong: {
             title: "Kabupaten Tabalong",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Tabalong.jpg",
+              "assets/image/fixkebudayaan/tabalong-2.jpg"
+            ],
+            imageLabels: [
+              "Tarian Dayak Meratus",
+              "Festival Budaya Dayak Deah",
+              "Makan Batalam Komunal"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Kekuatan kultur Dayak (Dayak Deah / Meratus), ritual adat seperti Tawas Jaa, permainan tradisi dan pertunjukan tarian Dayak. Makan batalam (suatu budaya makan bersama dalam satu nampan, terdapat nilai sosial di dalamnya kita bisa berinteraksi satu sama lain).</p>
@@ -1734,6 +1745,15 @@
           },
           "tanah-laut": {
             title: "Kabupaten Tanah Laut",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Tanah Laut.jpg",
+              "assets/image/fixkebudayaan/tanah-laut-2.jpg"
+            ],
+            imageLabels: [
+              "Tari Radap Rahayu",
+              "Musik Kurung-Kurung",
+              "Kuliner Pesisir Khas"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Tarian radap rahayu (tari penyambutan untuk acara besar), Musik tradisional kurung-kurung, tarian dan tradisi banjar setempat, kerajinan dan kuliner khas pesisir.</p>
@@ -1747,6 +1767,15 @@
           },
           "tanah-bumbu": {
             title: "Kabupaten Tanah Bumbu",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Tanah Bumbu.jpg",
+              "assets/image/fixkebudayaan/tanah-bumbu-2.jpg"
+            ],
+            imageLabels: [
+              "Ritual Mapenretasi ke Lautan",
+              "Pakaian Adat Lokal",
+              "Fashion Show Tradisional"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Mapenretasi (suatu ritual untuk melakukan persembahan ke lautan), Ragam pakaian adat dan motif lokal, Pentol ikan khas Pagatan, campuran pengaruh Banjar dan pesisir; upaya pelestarian motif dan kerajinan lokal.</p>
@@ -1760,6 +1789,15 @@
           },
           balangan: {
             title: "Kabupaten Balangan",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Balangan.jpg",
+              "assets/image/fixkebudayaan/balangan-2.jpg"
+            ],
+            imageLabels: [
+              "Aruh Adat Nimbuk",
+              "Kesenian Dayak Tradisional",
+              "Tari Surung Lalan"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Aruh adat nimbuk (suatu budaya ritual yang bertujuan untuk membuat rumah bagi orang yang meninggal), Kesenian Dayak (tarian tradisional), permainan lokal seperti Balogo, serta tarian ritual yang berakar pada kepercayaan lokal.</p>
@@ -1773,6 +1811,16 @@
           },
           kotabaru: {
             title: "Kabupaten Kotabaru",
+            images: [
+              "assets/image/fixkebudayaan/Kabupaten Kotabaru.jpg",
+              "assets/image/fixkebudayaan/kotabaru-2.jpg",
+              "assets/image/fixkebudayaan/kotabaru-3.jpg"
+            ],
+            imageLabels: [
+              "Budaya Pesisir Beragam",
+              "Tarian Dayak Meratus",
+              "Festival Budaya Sa-Ijaan"
+            ],
             content: `
               <h3>Kebudayaan Utama</h3>
               <p>Keberagaman budaya pesisir (Banjar, Dayak Meratus, Bugis, Bajau) — ritual pesisir seperti Selamatan Laut, tarian Dayak Meratus, teater kolosal lokal.</p>
@@ -1785,18 +1833,29 @@
             `,
           },
         },
+
+        // State
+        currentCarouselIndex: 0,
+        currentCarouselKey: null,
+        carouselAutoplayInterval: null,
+
         init: function () {
           const modal = document.getElementById("cultureModal");
           const closeBtn = modal.querySelector(".modal-close");
-          const closeBtnFooter = document.getElementById(
-            "cultureModalBtnClose"
-          );
+          const closeBtnFooter = document.getElementById("cultureModalBtnClose");
 
           closeBtn.addEventListener("click", () => this.close());
           closeBtnFooter.addEventListener("click", () => this.close());
 
           modal.addEventListener("click", (e) => {
             if (e.target === modal) this.close();
+          });
+
+          // Close with Escape key
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && modal.classList.contains("active")) {
+              this.close();
+            }
           });
 
           document.querySelectorAll(".culture-btn").forEach((btn) => {
@@ -1807,18 +1866,123 @@
             });
           });
         },
+
         open: function (key) {
           const data = this.data[key];
           if (!data) return;
 
+          this.currentCarouselKey = key;
+          this.currentCarouselIndex = 0;
+
           document.getElementById("cultureModalTitle").textContent = data.title;
           document.getElementById("cultureModalBody").innerHTML = data.content;
+
+          // Initialize carousel
+          this.renderCarousel();
 
           const modal = document.getElementById("cultureModal");
           modal.classList.add("active");
           document.body.style.overflow = "hidden";
+
+          // Start autoplay
+          this.startCarouselAutoplay();
         },
+
+        renderCarousel: function () {
+          const data = this.data[this.currentCarouselKey];
+          const carouselContainer = document.getElementById("cultureCarouselContainer");
+          const images = data.images || [];
+          const imageLabels = data.imageLabels || [];
+
+          if (images.length === 0) {
+            carouselContainer.style.display = "none";
+            return;
+          }
+
+          carouselContainer.style.display = "block";
+
+          // Create carousel slides
+          const slidesContainer = document.getElementById("cultureCarouselTrack");
+          slidesContainer.innerHTML = "";
+
+          images.forEach((img, index) => {
+            const slide = document.createElement("div");
+            slide.className = `culture-carousel-slide ${index === 0 ? "active" : ""}`;
+            const label = imageLabels[index] || `Slide ${index + 1}`;
+            slide.innerHTML = `
+              <img src="${img}" alt="${label}" loading="lazy">
+            `;
+            slidesContainer.appendChild(slide);
+          });
+
+          // Create dots
+          const dotsContainer = document.getElementById("cultureCarouselDots");
+          dotsContainer.innerHTML = "";
+
+          images.forEach((_, index) => {
+            const dot = document.createElement("button");
+            dot.className = `culture-carousel-dot ${index === 0 ? "active" : ""}`;
+            dot.setAttribute("aria-label", `Slide ${index + 1}`);
+            dot.addEventListener("click", () => this.goToSlide(index));
+            dotsContainer.appendChild(dot);
+          });
+
+          // Attach event listeners to carousel buttons
+          const prevBtn = document.getElementById("cultureCarouselPrev");
+          const nextBtn = document.getElementById("cultureCarouselNext");
+
+          prevBtn.onclick = () => this.prevSlide();
+          nextBtn.onclick = () => this.nextSlide();
+        },
+
+        goToSlide: function (index) {
+          const data = this.data[this.currentCarouselKey];
+          const slides = document.querySelectorAll(".culture-carousel-slide");
+          const dots = document.querySelectorAll(".culture-carousel-dot");
+
+          if (index < 0) {
+            this.currentCarouselIndex = slides.length - 1;
+          } else if (index >= slides.length) {
+            this.currentCarouselIndex = 0;
+          } else {
+            this.currentCarouselIndex = index;
+          }
+
+          // Update slides
+          slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === this.currentCarouselIndex);
+          });
+
+          // Update dots
+          dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === this.currentCarouselIndex);
+          });
+
+          // Reset autoplay timer
+          this.resetCarouselAutoplay();
+        },
+
+        nextSlide: function () {
+          this.goToSlide(this.currentCarouselIndex + 1);
+        },
+
+        prevSlide: function () {
+          this.goToSlide(this.currentCarouselIndex - 1);
+        },
+
+        startCarouselAutoplay: function () {
+          this.carouselAutoplayInterval = setInterval(() => {
+            this.nextSlide();
+          }, 5000); // Auto-advance every 5 seconds
+        },
+
+        resetCarouselAutoplay: function () {
+          clearInterval(this.carouselAutoplayInterval);
+          this.startCarouselAutoplay();
+        },
+
         close: function () {
+          clearInterval(this.carouselAutoplayInterval);
           const modal = document.getElementById("cultureModal");
           modal.classList.remove("active");
           document.body.style.overflow = "";
@@ -1830,7 +1994,7 @@
       });
     </script>
 
-    <!-- Modal Overlay untuk Kebudayaan -->
+    <!-- Modal Overlay untuk Kebudayaan dengan Carousel -->
     <div id="cultureModal" class="modal-overlay">
       <div class="modal-content">
         <button class="modal-close" aria-label="Tutup modal">
@@ -1849,6 +2013,33 @@
 
         <div class="modal-header">
           <h2 id="cultureModalTitle" class="modal-title">Judul Kebudayaan</h2>
+        </div>
+
+        <!-- Carousel Section -->
+        <div id="cultureCarouselContainer" class="culture-carousel-container" style="display: none;">
+          <div class="culture-carousel">
+            <div class="culture-carousel-track" id="cultureCarouselTrack">
+              <!-- Slides akan di-inject oleh JavaScript -->
+            </div>
+            
+            <div class="culture-carousel-nav">
+              <button class="culture-carousel-btn prev" id="cultureCarouselPrev" aria-label="Sebelumnya">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              
+              <div class="culture-carousel-dots" id="cultureCarouselDots">
+                <!-- Dots akan di-inject oleh JavaScript -->
+              </div>
+              
+              <button class="culture-carousel-btn next" id="cultureCarouselNext" aria-label="Selanjutnya">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
 
         <div class="modal-body" id="cultureModalBody">
